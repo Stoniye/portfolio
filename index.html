@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elias Steininger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="onLoad()">
+<div class="container">
+    <h1 class="name-title">Elias Steininger</h1>
+    <div class="greeting-container">
+        <h2 class="greeting">
+            Hallo,
+            <br>
+            ich bin
+            <span style="color: #26af01">Elias</span>, und bin
+            <br>
+            <span style="color: #9bcf00">Entwickler</span>.
+        </h2>
+    </div>
+    <div class="code-window">
+        <div class="code-window-buttons">
+            <div class="code-window-button code-window-button-red" style="background-color: #fc7173"></div>
+            <div class="code-window-button code-window-button-orange" style="background-color: #fd924a"></div>
+            <div class="code-window-button code-window-button-green" style="background-color: #b5f5d0"></div>
+        </div>
+        <div class="code-block">
+            <span class="keyword">using</span> <span class="variable">Sytem;</span><br>
+            <span class="keyword">using</span> <span class="variable">System.Collections.Generic;</span><br><br>
+            <span class="keyword">class</span> <span class="variable">Person : Developer</span> {<br>
+            &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">name</span> = <span class="string">"Elias Steininger"</span>;<br>
+            &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">age</span> = <span id="age" class="integer"></span>;<br>
+            &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">location</span> = <span class="string">"Austria"</span>;<br>
+            &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">yearsOfExperience</span> = <span id="yearsOfExperience" class="integer"></span>; <span class="comment">//Als Hobby Entwickler</span><br>
+            &nbsp;&nbsp;<span class="keyword">public</span> <span class="variable">List<</span><span class="string">string</span><span class="variable">></span> <span class="variable">languages</span> = <span class="keyword">new</span> <span class="variable">List<</span><span class="string">string</span><span class="variable">></span> {<span class="string">"HTML"</span>,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"JavaScript"</span>, <span class="string">"C"</span>, <span class="string">"C#"</span>, <span class="string">"GdScript"</span>};<br>
+            &nbsp;&nbsp;<span class="keyword">public void</span> <span class="variable">codeProject(){</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">Console</span><span class="variable">.WriteLine(</span><span class="string">"Schreibe sauberen code..."</span><span class="variable">);</span><br>
+            &nbsp;&nbsp;}<br>
+            }
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

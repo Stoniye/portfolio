@@ -1,0 +1,138 @@
+/*Background Gradient*/
+body {
+    padding: 0;
+    background:
+            radial-gradient(rgba(4, 12, 0, 0.7), transparent 50%),
+            radial-gradient(rgba(4, 14, 0, 0.5), transparent 50%),
+            linear-gradient(135deg, #000000, #050c00, #041000);
+    background-attachment: fixed;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Out fading grid in screen center*/
+body::before {
+    content: "";
+    position: absolute;
+    top: 25vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background-image:
+            linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
+    mask-image: radial-gradient(ellipse, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
+}
+
+/*General Container of everything*/
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    align-items: flex-end;
+}
+
+/*Name Title on the top Left*/
+.name-title{
+    color: #26af01;
+    font-family: Tahoma, serif;
+    font-weight: 700;
+    font-size: 2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    align-self: flex-start;
+}
+
+/*Container for the greeting*/
+.greeting-container{
+    flex-direction: column;
+    position: relative;
+    top: 140px;
+    left: 0;
+    width: 260px;
+    align-self: flex-start;
+}
+
+/*Text in the greeting*/
+.greeting-container h2{
+    margin-top: 10px;
+    color: white;
+    font-family: Tahoma, serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/*Container for the code Window*/
+.code-window {
+    background-color: #1e1f22;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 600px;
+    height: 410px;
+    max-width: 540px;
+    left: -200px;
+    position: relative;
+}
+
+/*Container for the code Window*/
+.code-window-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/*Window Button*/
+.code-window-button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+/*Window which contains the Code*/
+.code-block {
+    background-color: #26262b;
+    color: #F8F8F2;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.code-block .keyword {
+    color: #8abe80;
+    font-weight: bold;
+}
+.code-block .variable{
+    color: #e5d8b6;
+}
+
+.code-block .string {
+    color: #b8b949;
+}
+
+.code-block .integer {
+    color: #c38498;
+}
+
+.code-block .boolean {
+    color: #ba8498;
+}
+
+.code-block .comment {
+    color: #928275;
+    font-style: italic;
+}
