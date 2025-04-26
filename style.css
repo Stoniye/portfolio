@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: clip;
 }
 
 /*Out fading grid in screen center*/
@@ -60,7 +61,7 @@ body::before {
     position: relative;
     top: 140px;
     left: 0;
-    width: 260px;
+    width: 420px;
     align-self: flex-start;
 }
 
@@ -70,7 +71,35 @@ body::before {
     color: white;
     font-family: Tahoma, serif;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+}
+
+/*Container for the social links*/
+.social-container{
+    flex-direction: column;
+    position: relative;
+    top: 140px;
+    left: 0;
+    width: 420px;
+    align-self: flex-start;
+}
+
+.social-container a {
+    text-decoration: none;
+}
+
+/*Icons for social links*/
+.social-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(65%) sepia(70%) saturate(1069%) hue-rotate(30deg) brightness(100%) contrast(101%);
+    margin: 5px;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
 }
 
 /*Container for the code Window*/
@@ -106,10 +135,10 @@ body::before {
     color: #F8F8F2;
     padding: 20px;
     border-radius: 5px;
-    overflow-x: auto;
     font-family: 'Courier New', monospace;
     font-size: 14px;
     line-height: 1.5;
+    overflow-x: clip;
 }
 
 .code-block .keyword {
@@ -135,4 +164,80 @@ body::before {
 .code-block .comment {
     color: #928275;
     font-style: italic;
+}
+
+.description-container {
+    display: flex;
+    position: relative;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+
+.description-container h2 {
+    color: white;
+    font-family: Arial, serif;
+    font-size: 1.4rem;
+    margin-right: auto;
+}
+
+.personal-image {
+    width: 200px;
+    margin-left: 80px;
+    position: relative;
+    border-radius: 13px;
+}
+
+@media (max-width: 1550px) {
+    .code-window {
+        align-self: flex-start;
+        margin-top: 260px;
+        left: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1155px) {
+    .description-container {
+        flex-direction: column;
+        align-items: center;
+        top: 180px;
+    }
+
+    .description-container h2 {
+        text-align: center;
+    }
+
+    .personal-image {
+        margin-top: 30px;
+        align-self: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .code-window {
+        align-self: center;
+        width: 90%;
+        height: calc(410px + 10%);
+    }
+}
+
+@media (max-width: 500px) {
+    .greeting-container{
+        width: 90%;
+    }
+
+    .code-window {
+        height: calc(410px + 20%);
+    }
+}
+
+@media (max-width: 340px) {
+    .code-window {
+        height: calc(410px + 40%);
+    }
 }

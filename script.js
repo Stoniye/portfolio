@@ -1,6 +1,7 @@
 function onLoad() {
     document.getElementById("yearsOfExperience").innerHTML = getYearsPassed(new Date(2020, 7));
     document.getElementById("age").innerHTML = getYearsPassed(new Date(2006, 7, 14));
+    document.getElementById("descriptionText").innerHTML = document.getElementById("descriptionText").innerHTML.replace("#age#", getYearsPassed(new Date(2006, 7, 14))).replace("#exp#", getYearsPassed(new Date(2020, 7)));
 }
 
 function getYearsPassed(date) {
