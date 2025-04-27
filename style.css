@@ -14,6 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow-x: clip;
+    width: 100vw;
 }
 
 /*Out fading grid in screen center*/
@@ -191,7 +192,13 @@ body::before {
     border-radius: 13px;
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1620px) {
+    .code-window {
+        left: 0;
+    }
+}
+
+@media (max-width: 1280px) {
     .code-window {
         align-self: flex-start;
         margin-top: 260px;
@@ -226,18 +233,33 @@ body::before {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+    .container{
+        width: 80%;
+        position: relative;
+    }
+}
+
+@media (max-width: 445px) {
+    .container{
+        width: 100%;
+        left: 30px
+    }
+}
+
+@media (max-width: 375px) {
     .greeting-container{
-        width: 90%;
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .container{
+        width: 100%;
+        left: 90px
     }
 
     .code-window {
         height: calc(410px + 20%);
-    }
-}
-
-@media (max-width: 340px) {
-    .code-window {
-        height: calc(410px + 40%);
     }
 }
