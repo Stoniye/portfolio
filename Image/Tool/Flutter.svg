@@ -1,6 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 317" style="enable-background:new 0 0 256 317" xml:space="preserve"><style type="text/css"><![CDATA[
-	.st0{fill:#47C5FB;}
-	.st1{fill:url(#SVGID_1_);fill-opacity:0.8;}
-	.st2{fill:#00569E;}
-	.st3{fill:#00B5F8;}
-]]></style><g><polygon class="st0" points="157.67,0 0,157.67 48.8,206.47 255.27,0"/><polygon class="st0" points="156.57,145.4 72.15,229.82 121.13,279.53 169.84,230.82 255.27,145.4"/><polygon class="st2" points="121.13,279.53 158.21,316.61 255.27,316.61 169.84,230.82"/><polygon class="st3" points="71.6,230.36 120.4,181.56 169.84,230.82 121.13,279.53"/><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-173.6875" y1="548.7979" x2="-172.968" y2="548.5386" gradientTransform="matrix(44.5891 0 0 -44.5901 7866.5254 24720.502)"><stop offset="0" style="stop-color:#000000"/><stop offset="1" style="stop-color:#000000;stop-opacity:0"/></linearGradient><polygon class="st1" points="121.13,279.53 161.69,266.07 165.72,234.94"/></g></svg>
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1">
+ <defs>
+  <linearGradient y2="0.58693" x2="0.73801" y1="0.32763" x1="0.01853" id="SVGID_1_">
+   <stop stop-color="#000000" offset="0"/>
+   <stop stop-opacity="0" stop-color="#000000" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_1">
+   <polygon stroke="null" id="svg_2" fill="#47C5FB" points="59.38037109375,0.5590171813964844 10.137706756591797,49.80168151855469 25.378665924072266,65.04264450073242 89.86228942871094,0.5590171813964844 " class="st0"/>
+   <polygon stroke="null" id="svg_3" fill="#47C5FB" points="59.03683090209961,45.96957778930664 32.67121505737305,72.3351936340332 47.968387603759766,87.86035537719727 63.18124008178711,72.64750289916992 89.86228942871094,45.96957778930664 " class="st0"/>
+   <polygon stroke="null" id="svg_4" fill="#00569E" points="47.968387603759766,87.86035537719727 59.54902267456055,99.44098281860352 89.86228942871094,99.44098281860352 63.18124008178711,72.64750289916992 " class="st2"/>
+   <polygon stroke="null" id="svg_5" fill="#00B5F8" points="32.49944305419922,72.50384902954102 47.74040603637695,57.26288604736328 63.18124008178711,72.64750289916992 47.968387603759766,87.86035537719727 " class="st3"/>
+   <polygon stroke="null" id="svg_6" fill-opacity="0.8" fill="url(#SVGID_1_)" points="47.968387603759766,87.86035537719727 60.63587951660156,83.65661239624023 61.894508361816406,73.93424606323242 " class="st1"/>
+  </g>
+ </g>
+</svg>

@@ -68,7 +68,6 @@ body::before {
 
 /*Text in the greeting*/
 .greeting-container h2{
-    margin-top: 10px;
     color: white;
     font-family: Tahoma, serif;
     font-weight: bold;
@@ -85,7 +84,7 @@ body::before {
     align-self: flex-start;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
@@ -117,7 +116,7 @@ a {
 }
 
 /*Container for the code Window*/
-.code-window-buttons {
+.window-buttons {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
@@ -142,27 +141,27 @@ a {
     overflow-x: clip;
 }
 
-.code-block .keyword {
+.keyword {
     color: #8abe80;
     font-weight: bold;
 }
-.code-block .variable{
+.variable{
     color: #e5d8b6;
 }
 
-.code-block .string {
+.string {
     color: #b8b949;
 }
 
-.code-block .integer {
+.integer {
     color: #c38498;
 }
 
-.code-block .boolean {
+.boolean {
     color: #ba8498;
 }
 
-.code-block .comment {
+.comment {
     color: #928275;
     font-style: italic;
 }
@@ -204,7 +203,7 @@ a {
     padding-bottom: 100px;
 }
 
-.tools-title {
+.title {
     font-family: Arial, serif;
     color: #9bcf00;
     font-size: 2rem;
@@ -251,13 +250,77 @@ a {
 .tool-item img{
     margin-top: 10px;
     height: 100px;
-    width: auto;
+    width: 100px;
 }
 
 .tool-item h1{
     color: white;
     font-family: Arial, serif;
     font-size: 1.1rem;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 140px;
+    width: 100%;
+}
+
+.project-holder{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+    position: relative;
+    top: 50px;
+    padding-bottom: 100px;
+}
+
+.project-item{
+    width: 405px;
+    height: 500px;
+    background-color: #1e1f22;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+    padding: 20px;
+}
+
+.project-item:hover {
+    transform: scale(1.03);
+}
+
+.project-item h1{
+    top: 30px;
+    left: 25px;
+    align-self: center;
+    color: #9bcf00;
+    font-family: Tahoma, serif;
+    font-weight: bold;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+.project-item-window{
+    background-color: #26262b;
+    color: #F8F8F2;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: clip;
+    height: 430px;
+}
+
+.project-item-window img{
+    width: 360px;
+    max-height: 220px;
+    height: auto;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 1620px) {
