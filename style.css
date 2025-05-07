@@ -310,14 +310,13 @@ a{
     font-family: 'Courier New', monospace;
     font-size: 14px;
     line-height: 1.5;
-    overflow-x: clip;
+    overflow-x: visible;
     height: 430px;
 }
 
 .project-item-window img{
-    width: 360px;
-    max-height: 220px;
-    height: auto;
+    width: 365px;
+    height: 220px;
     position: relative;
     border-radius: 10px;
     margin-bottom: 20px;
