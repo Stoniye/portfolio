@@ -22,7 +22,7 @@ function getYearsPassed(date) {
 //Tools scroll animation
 const scrollContainer = document.querySelector('.tools-scroll');
 const track = document.querySelector('.tools-track');
-var speed = 0.3;
+let speed = 0.3;
 let offsetX = 0;
 
 const tools = document.querySelectorAll('.tools-track > a:has(.tool-item)');
