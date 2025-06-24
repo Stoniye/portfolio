@@ -54,7 +54,9 @@
             &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">location</span> = <span class="string">"Österreich"</span>;<br>
             &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">yearsOfExperience</span> = <span id="yearsOfExperience" class="integer"></span>; <span class="comment">//Als Hobby Entwickler</span><br>
             &nbsp;&nbsp;<span class="keyword">public</span> <span class="variable">List<</span><span class="string">string</span><span class="variable">></span> <span class="variable">languages</span> = <span class="keyword">new</span> <span class="variable">List<</span><span class="string">string</span><span class="variable">></span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<span class="string">"HTML"</span>, <span class="string">"JavaScript"</span>, <span class="string">"C"</span>, <span class="string">"C#"</span>, <span class="string">"GdScript"</span>};<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<span class="string">"HTML"</span>, <span class="string">"JavaScript"</span>, <span class="string">"Python"</span>, <span class="string">"C#"</span>, <span class="string">"GdScript"</span>};<br>
+            <span class="keyword">public</span> <span class="variable">List<</span><span class="string">string</span><span class="variable">></span> <span class="variable">interessen</span> = <span class="keyword">new</span> <span class="variable">List<</span><span class="string">string</span><span class="variable">></span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<span class="string">"KI"</span>, <span class="string">"spiele/software entwicklung"</span>, <span class="string">"open source"</span>};<br>
             &nbsp;&nbsp;<span class="keyword">public void</span> <span class="variable">codeProject(){</span><br>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">Console</span><span class="variable">.WriteLine(</span><span class="string">"Schreibe sauberen code..."</span><span class="variable">);</span><br>
             &nbsp;&nbsp;}<br>
@@ -65,8 +67,8 @@
         <h2 class="description" id="descriptionText">
             <span style="color: #9bcf00; font-size: 2rem; font-weight: bold">Über Mich!</span><br><br>
             Hey!<br>
-            Mein Name ist Elias, ich bin #age# Jahre alt und komme aus Österreich. Vor über #exp# Jahren habe ich mir das Programmieren mithilfe von YouTube-Tutorials selbst beigebracht. Seitdem arbeite ich in meiner Freizeit ständig an neuen Projekten – einige davon findest du unter "Projekte".<br><br>
-            Angefangen habe ich in der Konsole mit Python, bevor ich auf die Game Engine Unity umgestiegen bin und dort meine ersten Erfahrungen in der Spieleentwicklung gesammelt habe. Später wechselte ich zur Open-Source-Alternative Godot und entwickelte damit zahlreiche Spiele – eines davon ist sogar im Play Store verfügbar.<br>
+            Mein Name ist Elias, ich bin #age# Jahre alt und komme aus Österreich. Vor über #exp# Jahren habe ich mir das Programmieren mithilfe von YouTube-Tutorials selbst beigebracht. Seitdem arbeite ich in meiner Freizeit ständig an neuen Projekten – die besten davon findest du unter "Projekte".<br><br>
+            Angefangen habe ich in der Konsole mit Python, bevor ich auf die Game Engine Unity umgestiegen bin und dort meine ersten Erfahrungen in der Spieleentwicklung gesammelt habe. Später wechselte ich zur Open-Source-Alternative Godot und entwickelte damit zahlreiche Spiele.<br>
             Anschließend brachte ich mir die Entwicklung von Anwendungen für Windows, Web, macOS, iOS und Android mit Flutter bei. Darüber hinaus erweiterte ich meine Kenntnisse um HTML, CSS in Kombination mit JavaScript.</h2>
         <img class="personal-image" src="Image/Steininger%20Elias.png" alt="Elias Steininger">
     </div>
@@ -188,6 +190,60 @@
     <div class="project-container">
         <span class="title">Projekte</span>
         <div class="project-holder">
+            <a href="https://github.com/Stoniye/Stonix-Vision" target="_blank">
+                <div class="project-item">
+                    <div class="window-buttons">
+                        <div class="code-window-button code-window-button-red" style="background-color: #fc7173"></div>
+                        <div class="code-window-button code-window-button-orange" style="background-color: #fd924a"></div>
+                        <div class="code-window-button code-window-button-green" style="background-color: #b5f5d0"></div>
+                    </div>
+                    <div class="project-item-window">
+                        <img src="Image/Project/Stonix-Vision.png" alt="Stonix Vision">
+                        <span class="keyword">class</span> <span class="variable">Stonix-Vision : Project</span> {<br>
+                        &nbsp;&nbsp;<span class="keyword">public name</span> <span class="variable">name</span> = <span class="string">"Stonix Vision"</span>;<br>
+                        &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">year</span> = <span class="integer">2025</span>;<br>
+                        &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">description</span> =<br>
+                        <span class="string" style="left: 30px; position: relative;">"Eine vortrainiert Bilderkennungs KI"</span><span style="left: 30px; position: relative;">;</span><br>
+                        }
+                    </div>
+                </div>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.allconade.ai_dungeon" target="_blank">
+                <div class="project-item">
+                    <div class="window-buttons">
+                        <div class="code-window-button code-window-button-red" style="background-color: #fc7173"></div>
+                        <div class="code-window-button code-window-button-orange" style="background-color: #fd924a"></div>
+                        <div class="code-window-button code-window-button-green" style="background-color: #b5f5d0"></div>
+                    </div>
+                    <div class="project-item-window">
+                        <img src="Image/Project/AI-Dungeon.png" alt="AI Dungeon">
+                        <span class="keyword">class</span> <span class="variable">AI-Dungeon : Project</span> {<br>
+                        &nbsp;&nbsp;<span class="keyword">public name</span> <span class="variable">name</span> = <span class="string">"AI Dungeon 2.0"</span>;<br>
+                        &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">year</span> = <span class="integer">2025</span>;<br>
+                        &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">description</span> =<br>
+                        <span class="string" style="left: 30px; position: relative;">"Dungeons and Dragons und interaktive Geschichten mithilfe KI"</span><span style="left: 30px; position: relative;">;</span><br>
+                        }
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/Stoniye/Stonix-PSL" target="_blank">
+                <div class="project-item">
+                    <div class="window-buttons">
+                        <div class="code-window-button code-window-button-red" style="background-color: #fc7173"></div>
+                        <div class="code-window-button code-window-button-orange" style="background-color: #fd924a"></div>
+                        <div class="code-window-button code-window-button-green" style="background-color: #b5f5d0"></div>
+                    </div>
+                    <div class="project-item-window">
+                        <img src="Image/Project/Stonix-PSL.png" alt="Stonix PSL">
+                        <span class="keyword">class</span> <span class="variable">Stonix-PSL : Project</span> {<br>
+                        &nbsp;&nbsp;<span class="keyword">public name</span> <span class="variable">name</span> = <span class="string">"Stonix PSL"</span>;<br>
+                        &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">year</span> = <span class="integer">2025</span>;<br>
+                        &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">description</span> =<br>
+                        <span class="string" style="left: 30px; position: relative;">"Kleines KI sprachmodel (Pre-trained small Language Model)"</span><span style="left: 30px; position: relative;">;</span><br>
+                        }
+                    </div>
+                </div>
+            </a>
             <a href="https://play.google.com/store/apps/details?id=com.SpaceFighter.Allconade" target="_blank">
                 <div class="project-item">
                     <div class="window-buttons">
@@ -220,6 +276,24 @@
                         &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">year</span> = <span class="integer">2025</span>;<br>
                         &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">description</span> =<br>
                         <span class="string" style="left: 30px; position: relative;">"Eine günstigere Version von ChatGPT Premium mit der ChatGPT-API"</span><span style="left: 30px; position: relative;">;</span><br>
+                        }
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/Stoniye/Voxel-Engine" target="_blank">
+                <div class="project-item">
+                    <div class="window-buttons">
+                        <div class="code-window-button code-window-button-red" style="background-color: #fc7173"></div>
+                        <div class="code-window-button code-window-button-orange" style="background-color: #fd924a"></div>
+                        <div class="code-window-button code-window-button-green" style="background-color: #b5f5d0"></div>
+                    </div>
+                    <div class="project-item-window">
+                        <img src="Image/Project/Voxel-Engine.png" alt="Voxel Engine">
+                        <span class="keyword">class</span> <span class="variable">VoxelEngine : Project</span> {<br>
+                        &nbsp;&nbsp;<span class="keyword">public name</span> <span class="variable">name</span> = <span class="string">"Voxel Engine"</span>;<br>
+                        &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">year</span> = <span class="integer">2025</span>;<br>
+                        &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">description</span> =<br>
+                        <span class="string" style="left: 30px; position: relative;">"Eine 3D Voxel Engine mit OpenGL"</span><span style="left: 30px; position: relative;">;</span><br>
                         }
                     </div>
                 </div>
@@ -274,78 +348,6 @@
                         &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">year</span> = <span class="integer">2023</span>;<br>
                         &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">description</span> =<br>
                         <span class="string" style="left: 30px; position: relative;">"Ein versuchter Mindustry-Remake in Godot"</span><span style="left: 30px; position: relative;">;</span><br>
-                        }
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/Stoniye/Voxel-Engine" target="_blank">
-                <div class="project-item">
-                    <div class="window-buttons">
-                        <div class="code-window-button code-window-button-red" style="background-color: #fc7173"></div>
-                        <div class="code-window-button code-window-button-orange" style="background-color: #fd924a"></div>
-                        <div class="code-window-button code-window-button-green" style="background-color: #b5f5d0"></div>
-                    </div>
-                    <div class="project-item-window">
-                        <img src="Image/Project/Voxel-Engine.png" alt="Voxel Engine">
-                        <span class="keyword">class</span> <span class="variable">VoxelEngine : Project</span> {<br>
-                        &nbsp;&nbsp;<span class="keyword">public name</span> <span class="variable">name</span> = <span class="string">"Voxel Engine"</span>;<br>
-                        &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">year</span> = <span class="integer">2025</span>;<br>
-                        &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">description</span> =<br>
-                        <span class="string" style="left: 30px; position: relative;">"Eine 3D Voxel Engine mit OpenGL"</span><span style="left: 30px; position: relative;">;</span><br>
-                        }
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/Stoniye/Stonix-Vision" target="_blank">
-                <div class="project-item">
-                    <div class="window-buttons">
-                        <div class="code-window-button code-window-button-red" style="background-color: #fc7173"></div>
-                        <div class="code-window-button code-window-button-orange" style="background-color: #fd924a"></div>
-                        <div class="code-window-button code-window-button-green" style="background-color: #b5f5d0"></div>
-                    </div>
-                    <div class="project-item-window">
-                        <img src="Image/Project/Stonix-Vision.png" alt="Stonix Vision">
-                        <span class="keyword">class</span> <span class="variable">Stonix-Vision : Project</span> {<br>
-                        &nbsp;&nbsp;<span class="keyword">public name</span> <span class="variable">name</span> = <span class="string">"Stonix Vision"</span>;<br>
-                        &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">year</span> = <span class="integer">2025</span>;<br>
-                        &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">description</span> =<br>
-                        <span class="string" style="left: 30px; position: relative;">"Eine vortrainiert Bilderkennungs KI"</span><span style="left: 30px; position: relative;">;</span><br>
-                        }
-                    </div>
-                </div>
-            </a>
-            <a href="https://github.com/Stoniye/Stonix-PSL" target="_blank">
-                <div class="project-item">
-                    <div class="window-buttons">
-                        <div class="code-window-button code-window-button-red" style="background-color: #fc7173"></div>
-                        <div class="code-window-button code-window-button-orange" style="background-color: #fd924a"></div>
-                        <div class="code-window-button code-window-button-green" style="background-color: #b5f5d0"></div>
-                    </div>
-                    <div class="project-item-window">
-                        <img src="Image/Project/Stonix-PSL.png" alt="Stonix PSL">
-                        <span class="keyword">class</span> <span class="variable">Stonix-PSL : Project</span> {<br>
-                        &nbsp;&nbsp;<span class="keyword">public name</span> <span class="variable">name</span> = <span class="string">"Stonix PSL"</span>;<br>
-                        &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">year</span> = <span class="integer">2025</span>;<br>
-                        &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">description</span> =<br>
-                        <span class="string" style="left: 30px; position: relative;">"Kleines KI sprachmodel"</span><span style="left: 30px; position: relative;">;</span><br>
-                        }
-                    </div>
-                </div>
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.allconade.ai_dungeon" target="_blank">
-                <div class="project-item">
-                    <div class="window-buttons">
-                        <div class="code-window-button code-window-button-red" style="background-color: #fc7173"></div>
-                        <div class="code-window-button code-window-button-orange" style="background-color: #fd924a"></div>
-                        <div class="code-window-button code-window-button-green" style="background-color: #b5f5d0"></div>
-                    </div>
-                    <div class="project-item-window">
-                        <img src="Image/Project/AI-Dungeon.png" alt="AI Dungeon">
-                        <span class="keyword">class</span> <span class="variable">AI-Dungeon : Project</span> {<br>
-                        &nbsp;&nbsp;<span class="keyword">public name</span> <span class="variable">name</span> = <span class="string">"AI Dungeon 2.0"</span>;<br>
-                        &nbsp;&nbsp;<span class="keyword">public int</span> <span class="variable">year</span> = <span class="integer">2025</span>;<br>
-                        &nbsp;&nbsp;<span class="keyword">public string</span> <span class="variable">description</span> =<br>
-                        <span class="string" style="left: 30px; position: relative;">"Dungeons and Dragons und interaktive Geschichten mithilfe KI"</span><span style="left: 30px; position: relative;">;</span><br>
                         }
                     </div>
                 </div>
