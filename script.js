@@ -1,12 +1,20 @@
+let age = 0;
+let experience = 0;
+
+addEventListener('load', onLoad);
+
 function onLoad(){
     loadNumbers();
 }
 
 //Load year numbers in Text
 function loadNumbers() {
-    document.getElementById("yearsOfExperience").innerHTML = getYearsPassed(new Date(2020, 7));
-    document.getElementById("age").innerHTML = getYearsPassed(new Date(2006, 7));
-    document.getElementById("descriptionText").innerHTML = document.getElementById("descriptionText").innerHTML.replace("#age#", getYearsPassed(new Date(2006, 7))).replace("#exp#", getYearsPassed(new Date(2020, 7)));
+    age = getYearsPassed(new Date(2006, 7));
+    experience = getYearsPassed(new Date(2020, 7));
+
+    document.getElementById("yearsOfExperience").innerHTML = experience;
+    document.getElementById("age").innerHTML = age;
+    document.getElementById("descriptionText").innerHTML = document.getElementById("descriptionText").innerHTML.replace("#age#", age).replace("#exp#", experience);
 }
 
 function getYearsPassed(date) {
