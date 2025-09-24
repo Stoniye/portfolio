@@ -1,4 +1,3 @@
-/*Background Gradient*/
 body {
     padding: 0;
     background:
@@ -17,7 +16,6 @@ body {
     width: 100vw;
 }
 
-/*Out fading grid in screen center*/
 body::before {
     content: "";
     position: absolute;
@@ -35,7 +33,6 @@ body::before {
     mask-image: radial-gradient(ellipse, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
 }
 
-/*General Container of everything*/
 .container{
     display: flex;
     flex-direction: column;
@@ -44,7 +41,6 @@ body::before {
     align-items: flex-end;
 }
 
-/*Name Title on the top Left*/
 .name-title{
     color: #26af01;
     font-family: Tahoma, serif;
@@ -56,7 +52,6 @@ body::before {
     align-self: flex-start;
 }
 
-/*Container for the greeting*/
 .greeting-container{
     flex-direction: column;
     position: relative;
@@ -66,7 +61,6 @@ body::before {
     align-self: flex-start;
 }
 
-/*Text in the greeting*/
 .greeting-container h2{
     color: white;
     font-family: Tahoma, serif;
@@ -74,7 +68,6 @@ body::before {
     font-size: 2.5rem;
 }
 
-/*Container for the social links*/
 .social-container{
     flex-direction: column;
     position: relative;
@@ -88,7 +81,6 @@ a{
     text-decoration: none;
 }
 
-/*Icons for social links*/
 .social-icon {
     width: 30px;
     height: 30px;
@@ -102,7 +94,6 @@ a{
     transform: scale(1.2);
 }
 
-/*Container for the code Window*/
 .code-window {
     background-color: #1e1f22;
     border-radius: 10px;
@@ -115,21 +106,18 @@ a{
     position: relative;
 }
 
-/*Container for the code Window*/
 .window-buttons {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-/*Window Button*/
 .code-window-button {
     width: 16px;
     height: 16px;
     border-radius: 50%;
 }
 
-/*Window which contains the Code*/
 .code-block {
     background-color: #26262b;
     color: #F8F8F2;
