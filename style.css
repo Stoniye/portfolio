@@ -116,6 +116,8 @@ main p {
 }
 
 main .image-container {
+    margin-top: 20px;
+    margin-bottom: 70px;
     width: 260px;
     max-width: 100%;
     border-radius: 18px;
@@ -127,4 +129,22 @@ main .image-container img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.svg-icon-container{
+    flex-direction: column;
+    align-self: center;
+}
+
+.svg-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 200ms ease;
+    filter: brightness(0) saturate(100%) invert(57%) sepia(91%) saturate(1063%) hue-rotate(69deg) brightness(97%) contrast(101%);
+    margin: 5px;
+}
+
+.svg-icon:hover {
+    transform: scale(1.2);
 }
