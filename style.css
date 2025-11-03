@@ -36,12 +36,6 @@ a {
     align-items:stretch;
 }
 
-@media (max-width:860px){
-    .nav {
-        width: auto;
-    }
-}
-
 .nav span {
     flex: 0 1 auto;
     min-width: 120px;
@@ -73,14 +67,16 @@ a {
 }
 
 main {
-    padding-top: 20px;
     max-width: 700px;
-    width: 75%;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
-    margin-top: 70px;
 }
 
 main h1 {
@@ -169,42 +165,51 @@ main .image-container img {
 
 .projects-container {
     display: grid;
-    flex-direction: column;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 50px;
-    position: relative;
-    padding-bottom: 100px;
     width: 100%;
     max-width: 100%;
+    justify-content: center;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .project {
-    width: 300px;
-    height: 350px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    min-height: 350px;
     background-color: #1e1f22;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     transition: transform 100ms ease;
     padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project:hover {
     transform: scale(1.03);
 }
 
-.project p {
-
-}
-
 .project img {
-    max-width: 100%;
-    align-self: center;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
+    margin-top: auto;
 }
 
-@media (max-width:425px){
+@media (max-width: 375px) {
     .project {
+        min-height: 290px;
         width: 70%;
-        height: 290px;
+        padding: 15px;
+    }
+
+    .projects-container {
+        gap: 30px;
+        padding: 0 5px;
     }
 }
