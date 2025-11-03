@@ -36,6 +36,12 @@ a {
     align-items:stretch;
 }
 
+@media (max-width:860px){
+    .nav {
+        width: auto;
+    }
+}
+
 .nav span {
     flex: 0 1 auto;
     min-width: 120px;
