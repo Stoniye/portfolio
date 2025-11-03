@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 a {
@@ -194,4 +194,11 @@ main .image-container img {
     max-width: 100%;
     align-self: center;
     border-radius: 10px;
+}
+
+@media (max-width:425px){
+    .project {
+        width: 70%;
+        height: 290px;
+    }
 }
