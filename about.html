@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Image/portfolio-person.webp" type="image/x-icon">
+    <title>Elias Steininger - About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+    <filter id="textDistort">
+        <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" seed="3" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+        <feGaussianBlur stdDeviation="0.2"/>
+    </filter>
+</svg>
+
+<div class="nav">
+    <a href="index.html">
+        <span style="font-weight: bold">elias steininger</span>
+    </a>
+    <a href="about.html">
+        <span>about</span>
+    </a>
+    <a href="projects.html">
+        <span>projects</span>
+    </a>
+    <a href="articles.html">
+        <span>articles</span>
+    </a>
+    <a href="contact.html">
+        <span>contact</span>
+    </a>
+    <a href="https://allconade.com/" target="_blank">
+        <span>allconade</span>
+    </a>
+</div>
+
+<main>
+    <h2>
+        <span>Über mich</span>
+    </h2>
+    <p id="textWithYears">
+        Hey! Ich bin <strong>Elias Steininger</strong>, <strong>#age#</strong> Jahre alt und komme aus <strong>Österreich</strong>.
+        Vor über <strong>#exp#</strong> Jahren hab ich angefangen, mir das Programmieren mit YouTube-Tutorials selbst beizubringen, weil ich einfach wissen wollte, wie dinge funktionieren. Seitdem bastle ich ständig an neuen Projekten,
+        und die auf die ich am meisten stolz bin findest du unter „projects“.
+    </p>
+    <p>
+        Ich interessiere mich für alles rund um <strong>Open Source</strong>, <strong>AI</strong>, <strong>Spieleentwicklung</strong>, <strong>Softwareentwicklung</strong> und <strong>Linux</strong>.
+        Am liebsten schreibe ich Code in <a href="https://rust-lang.org/" target="_blank">Rust</a> oder <a href="https://www.c-language.org/" target="_blank">C</a>.
+    </p>
+    <p>
+        Früher war ich auf Windows unterwegs, bin aber irgendwann auf Linux umgestiegen,
+        weil es mir einfach mehr freiheit gibt. Auf meinem PC läuft <a href="https://system76.com/pop/" target="_blank">Pop!_OS</a>
+        und auf meinem Laptop <a href="https://omarchy.org/" target="_blank">Omarchy</a>.
+    </p>
+    <div class="image-container">
+        <img src="Image/Steininger%20Elias.webp" alt="Elias Steininger">
+    </div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
