@@ -119,14 +119,12 @@ main p {
     line-height: 1.7;
 }
 
-main p a,
-main li a {
+main p a, main li a {
     color: #c3cbcb;
     box-shadow: #50a156 0 2px 0;
 }
 
-main p a:hover,
-main li a:hover {
+main p a:hover, main li a:hover {
     box-shadow: #35733a 0 2px 0;
 }
 
