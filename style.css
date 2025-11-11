@@ -119,13 +119,34 @@ main p {
     line-height: 1.7;
 }
 
-main p a {
+main a {
     color: #c3cbcb;
     box-shadow: #50a156 0 2px 0;
 }
 
-main p a:hover {
+main a:hover {
     box-shadow: #35733a 0 2px 0;
+}
+
+main ul {
+    align-self: flex-start;
+    list-style-type: none;
+}
+
+main li {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #c3cbcb;
+    font-size: 1.2rem;
+    text-align: left;
+    max-width: 700px;
+    align-self: center;
+    line-height: 1.7;
+}
+
+main li:before {
+    content: "▸";
+    color: #1eb325;
+    padding-right: 10px;
 }
 
 main .image-container {
